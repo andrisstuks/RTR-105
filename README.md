@@ -2,8 +2,8 @@
 Datormācība (pamatkurss) elektroniskā klade
 
 ####ls 
-**ls** - visi faili un drektorijas . direktorijā
-**ls -l** - parāda failu un direktoriju sarakstu ar to tiesībām, piederību un izmēru baitos
+>**ls** - visi faili un drektorijas . direktorijā
+>**ls -l** - parāda failu un direktoriju sarakstu ar to tiesībām, piederību un izmēru baitos
 **ls -lh** - parāda līdzīgi kā -l, bet ar izmēru K, M vai G baitu paplašinājumu
 **ls Desktop/** - parāda /Desktop adrešu sarakstu
 **ls -a** - parāda pilnu failu un direktoriju sarakstu
