@@ -26,8 +26,8 @@ cd - pārvieto uz mājas direktoriju
 mkdir - izveidot direktoriju, saīsinājums no make directory
 rmdir - izdžest direktoriju, saīsinājums no remove directory
 touch - rada tukšu failu
-touch sample.txt** - rada failu ar nosaukumu sample un faila paplašinājumu .txt direktorijā, kurā atrodamies
-touch /home/user/rubbish/garbage.txt** - izveido garbage.txt failu direktorijā /home/user/rubbish/
+touch sample.txt - rada failu ar nosaukumu sample un faila paplašinājumu .txt direktorijā, kurā atrodamies
+touch /home/user/rubbish/garbage.txt - izveido garbage.txt failu direktorijā /home/user/rubbish/
 -> direktorijas norādi varēja veikt arī ar ~/rubbish/garbage.txt, kur ~/ novada uz mājas direktoriju
 echo _ļoti svarīga informācija_ > saglaba.txt - izveido failu saglaba.txt ar doto tekstu _ļoti svarīga informācija_
 cat random_fails.txt - nolasa _random_fails.txt_ tesktu
