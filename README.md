@@ -1,15 +1,20 @@
 # RTR-105
 Datormācība (pamatkurss) elektroniskā klade
 
-####ls <h1>
-  **ls** - visi faili un drektorijas . direktorijā  
-  **ls -l** - parāda failu un direktoriju sarakstu ar to tiesībām, piederību un izmēru baitos
-  **ls -lh** - parāda līdzīgi kā -l, bet ar izmēru K, M vai G baitu paplašinājumu
-  **ls Desktop/** - parāda /Desktop adrešu sarakstu
-  **ls -a** - parāda pilnu failu un direktoriju sarakstu
-  **ls -al** - parāda pilnu failu un direktoriju sarakstu, ieskaitot slēptos failus un direktorijas ar tiesībām un izmēru baitos
-  **ls -lt** - parāda failu un direktoriju sarakstu ar to tiesībām, piederību un izmēru baitos, šķirojot pēc datuma dilstoši
-  **ls -lrt** - tas pats kas lt, tikai augoši, īpaši ērti, ja pievienojam kādu failu, ko gribam izpildīt - tas pēc attainojuma būs blakus aktīvajam kursoram, t.i. sraksta apakšā
+####ls
+
+**ls** - visi faili un drektorijas . direktorijā  
+
+**ls -l** - parāda failu un direktoriju sarakstu ar to tiesībām, piederību un izmēru baitos
+
+**ls -lh** - parāda līdzīgi kā -l, bet ar izmēru K, M vai G baitu paplašinājumu
+
+**ls Desktop/** - parāda /Desktop adrešu sarakstu
+
+**ls -a** - parāda pilnu failu un direktoriju sarakstu
+**ls -al** - parāda pilnu failu un direktoriju sarakstu, ieskaitot slēptos failus un direktorijas ar tiesībām un izmēru baitos
+**ls -lt** - parāda failu un direktoriju sarakstu ar to tiesībām, piederību un izmēru baitos, šķirojot pēc datuma dilstoši
+**ls -lrt** - tas pats kas lt, tikai augoši, īpaši ērti, ja pievienojam kādu failu, ko gribam izpildīt - tas pēc attainojuma būs blakus aktīvajam kursoram, t.i. sraksta apakšā
 
 ####cd
 **cd ..** - atpakaļ
