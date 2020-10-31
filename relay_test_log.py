@@ -1,3 +1,6 @@
+# Gaismas kontrole 2 gaismas grupam, izmantojot Rsapberry Pi 4
+# un 4 Channel Relay Module for Arduino Projects
+
 import RPi.GPIO as GPIO
 import requests
 import json
@@ -11,12 +14,12 @@ import urllib.parse
 GPIO.setmode(GPIO.BCM)
 
 global pinlist
-pinlist=[24,23]
+pinlist=[24,23] # pin numurus mainam reizi diennaktī, lai gaismas grupas strādātu vienādu summāro laiku
 #for i in pinlist:
 #    GPIO.setup(i, GPIO.OUT)
 #    GPIO.output(i, GPIO.LOW)
 
-natu='http://192.168.1.241:8200/last/600261'
+natu='http://192.168.1.241:8200/last/600261' # priekš get request norādam pieprasāmos sensorus
 top_h='http://192.168.1.241:8200/last/500664'
 top_a='http://192.168.1.241:8200/last/50065A'
 toplight=[top_h,top_a]
