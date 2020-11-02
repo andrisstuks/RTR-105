@@ -226,9 +226,9 @@ def half_on_off_status():
             half_light_status_on=True
             half_on_counter+=1
             half_off_counter=0
-        else:
-            half_on_counter+=1
-            half_off_counter=0
+        else: # Te nepareizi skaitījām gaismas stausu- kad vajadzēja ieskiatīt izslēgto, skaitīju ieslēgto
+            half_off_counter+=1 # Aizstāju half_on_counter+=1 on uz off
+            half_off_counter=0 # Aizstāju half_off_counter=0 off uz on
     elif half_light_status_on==False:
         half_on_counter=0
         half_off_counter+=1
@@ -264,9 +264,9 @@ def all_on_off_status():
             all_light_status_on=True
             all_on_counter+=1
             all_off_counter=0
-        else:
-            all_on_counter+=1
-            all_off_counter=0
+        else: # Te nepareizi skaitījām skaitītāju gaismas izslēgšanai
+            all_off_counter+=1 # Šeit all_on_counter+=1 aizstāju on ar off
+            all_on_counter=0 # Šeit all_off_counter=0 aizstāju off ar on
     elif all_light_status_on==False:
         all_on_counter=0
         all_off_counter+=1
