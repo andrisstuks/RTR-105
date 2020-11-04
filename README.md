@@ -180,14 +180,15 @@ Biežāk lietotās ```umask``` kombinācijas:
 * 002
 * 077
 * 007
+
 Kur atņemot 7 no 6, rezultāts ir -1, kas tiek interpretēts kā 0 un attiecīgajai grupai visas atļaujas tiek mainītas uz 0
 
 ```umask``` uzstādījumus var pārbaudīt, ievadot komandu ```umask``` bez argumentiem, vai ar argumentu -S```umask -S```, kur pirmajā gadījumā atbilde būs līdzīga ```0022```, un otrajā - ```u=rwx,g=rx,o=rx```. Ievērojiet, ka parbaudot atbildi oktāli, mēs redzam 4 simbolus 3 simbolu vietā, tas ir sastīts ar to, ka pirmais simbols raksturo speciālās klases:
-```
+
 * setuid
 * setgid
 * sticky
-```
+
 ```umask 0022``` ir tas pats kas ```umask 022```
 
 #### ECHO
@@ -197,37 +198,40 @@ Kur atņemot 7 no 6, rezultāts ir -1, kas tiek interpretēts kā 0 un attiecīg
 |echo $?| - parāda pēdējā procesa izpildes rezultātu |
 |echo $OLDPWD| - parāda iepriekšējo aktīvo direktoriju|
 |echo _ļoti svarīgs teksts_ >> random_fails.txt| - pievieno norādīto tekstu norādītajam failam|
-```
+
 -> par _echo_ var atrast [Tecmint](https://www.tecmint.com/echo-command-in-linux/)
 
 #### Noderīga informācija
-```
-whoami - parāda lietotāja vārdu
-who - saīsināta informācija par ielogotiem lietotājiem
-w - laiku, datora uptime, ielogoto lietotāju skaitu un sarakstu
-man - ar komandu aiz tā parāda komandas skaidrojumu
-pwd - _present working directory_ - parāda patreizējo . direktoriju
-tree - parāda failu un direktoriju koku
-tree -d - parāda tikai tree. Iekš Raspberry pi (debian) nestrādā
-```
+|komanda|apraksts|
+|-------|--------|
+|whoami| - parāda lietotāja vārdu|
+|who| - saīsināta informācija par ielogotiem lietotājiem|
+|w| - laiku, datora uptime, ielogoto lietotāju skaitu un sarakstu|
+|man| - ar komandu aiz tā parāda komandas skaidrojumu|
+|pwd| - _present working directory_ - parāda patreizējo . direktoriju|
+|tree| - parāda failu un direktoriju koku|
+|tree -d| - parāda tikai tree. Iekš Raspberry pi (debian) nestrādā|
+
 
 #### Pievienot PATH
-`PATH=$PATH:~- pievieno norādīto direktoriju PATH`
+|komanda|apraksts|
+|-------|--------|
+|PATH=$PATH|:~- pievieno norādīto direktoriju PATH|
 
 #### Programmas rakstīšana nano editorā, kompilēšana
-```
-nano random.c - atver norādīto failu, ja fails nepastāv, saglabājot izveido failu ar norādīto nosaukumu un .c paplašinājumu (C valodas fails)
-gcc random.c - kompilē skriptu par izpildāmu failu, pēc noklusējuma _a.out_
-gcc random.c -o strict.out - kompilē skriptu par izpildāmu failu, piešķirot nosaukumu _strict.out_
-```
+|komanda|apraksts|
+|-------|--------|
+|nano random.c |- atver norādīto failu, ja fails nepastāv, saglabājot izveido failu ar norādīto nosaukumu un .c paplašinājumu (C valodas fails)|
+|gcc random.c| - kompilē skriptu par izpildāmu failu, pēc noklusējuma _a.out_|
+|gcc random.c -o strict.out| - kompilē skriptu par izpildāmu failu, piešķirot nosaukumu _strict.out_|
+
 
 #### Darba beigšana, komandu saglabāšana
-```
-history - parāda iepriekš lietotās komandas
-history > darbibu_vesture.txt - saglabā visu darbību vēsturi _darbibu_vesture.txt_ failā.
-exit - izeja no sistēmas
-sh - izslēdz shell
-```
-
-#### Raspberry Pi lietotāja administrēšana, SSH maiņa
+|komanda|apraksts|
+|-------|--------|
+|clear|Attīra termināļa logu|
+|history| - parāda iepriekš lietotās komandas|
+|history > darbibu_vesture.txt| - saglabā visu darbību vēsturi _darbibu_vesture.txt_ failā.|
+|exit| - izeja no sistēmas|
+|sh| - izslēdz shell
 
