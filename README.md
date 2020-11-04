@@ -3,14 +3,19 @@ Datormācība (pamatkurss) elektroniskā klade
 
 #### ls
 ```
+ls komandai argumentu apzīmējumu kārtībai nav nozīmes(-a, -l, -t, -r) un tos var apvienot
+ls -lart būs tas pats kas ls -l -a -r -t
 ls - visi faili un drektorijas . direktorijā  
-ls -l - parāda failu un direktoriju sarakstu ar to tiesībām, piederību un izmēru baitos
+ls -F - parāda datu tipu, / -direktorija, @ -links, * -izpildāmais fails
+ls -l - parāda failu un direktoriju sarakstu ar to tiesībām, savienojumiem, piederību, lietotāja grupu, izmēru baitos, pēdējo izmaiņu datumu un nosaukumu ar paplaišinājumu
 ls -lh - parāda līdzīgi kā -l, bet ar izmēru K, M vai G baitu paplašinājumu
 ls Desktop/ - parāda /Desktop adrešu sarakstu
 ls -a - parāda pilnu failu un direktoriju sarakstu
 ls -al - parāda pilnu failu un direktoriju sarakstu, ieskaitot slēptos failus un direktorijas ar tiesībām un izmēru baitos
 ls -lt - parāda failu un direktoriju sarakstu ar to tiesībām, piederību un izmēru baitos, šķirojot pēc datuma dilstoši
 ls -lrt - tas pats kas lt, tikai augoši, īpaši ērti, ja pievienojam kādu failu, ko gribam izpildīt - tas pēc attainojuma būs blakus aktīvajam kursoram, t.i. sraksta apakšā
+ls -lart - visi faili ieskiatot slēptos, sašķiroti pēc laika augošā secībā
+
 ```
 #### cd
 ```
@@ -18,13 +23,15 @@ cd .. - atpakaļ
 cd ~ (tilde) - pārvieto uz mājas direktoriju
 cd home/user - pārvieto uz mājas diektorijas adresi
 cd / - pārvieto uz root adresi
-cd - pārvieto uz mājas direktoriju
+cd -  -pārvieto uz mājas direktoriju
 ```
 
 #### Darbības ar failiem un direktorijām
 ```
 mkdir - izveidot direktoriju, saīsinājums no make directory
-rmdir - izdžest direktoriju, saīsinājums no remove directory
+mkdir -p /home/user/svarigas/lietas/seit -Lai izveidotu vairāku direktoriju dziļu direktoriju, izveidojot neesošās direktorijas pa ceļam
+rmdir - izdzēst direktoriju, saīsinājums no remove directory, izdzēš tikai tukšu direktoriju
+rm -rf - izdzēsīs direktoriju arī ar writeprotected failiem un visām direktorijām norādītajā direktorijā
 touch - rada tukšu failu
 touch sample.txt - rada failu ar nosaukumu sample un faila paplašinājumu .txt direktorijā, kurā atrodamies
 touch /home/user/rubbish/garbage.txt - izveido garbage.txt failu direktorijā /home/user/rubbish/
@@ -62,10 +69,25 @@ ar uname var pielietot sekojošsas opcijas
 -v vai --kernel-version - kodola versija
 ```
 
+#### Atļaujas
+```
+Aļauju tipi:
+r -> read jeb lasīt
+w -> write jeb rakstīt/izmainīt
+x ->execute jeb izpildīt
+````
+Atšķirības starp failu un direktoriju atļaujām
+|Atļauja|Fails|Direktorija|
+|-------|-----|-----------|
+|r|Atļauj lasīt failu|Atļauj kasīt failu nosaukumus direktorijā, bet ne papildus informāciju|
+|w|Atļauj mainīt failu|Atļauj mainīt ierakstus direktorijā|
+|x|Atļauj izpildīt failu|Atļauj pieeju mapes saturam un satura metadatiem|
+
 #### ECHO
 ```
 echo $0 - parāda atrašanās vietu relatīvi darbībai. Atrodoties skriptā, šī komanda atgriezīs skripta nosaukumu, 
 echo $? - parāda pēdējā procesa izpildes rezultātu 
+echo $OLDPWD - parāda iepriekšējo aktīvo direktoriju
 echo _ļoti svarīgs teksts_ >> random_fails.txt - pievieno norādīto tekstu norādītajam failam
 ```
 -> par _echo_ var atrast [Tecmint](https://www.tecmint.com/echo-command-in-linux/)
@@ -77,7 +99,8 @@ who - saīsināta informācija par ielogotiem lietotājiem
 w - laiku, datora uptime, ielogoto lietotāju skaitu un sarakstu
 man - ar komandu aiz tā parāda komandas skaidrojumu
 pwd - _present working directory_ - parāda patreizējo . direktoriju
-tree - parāda dir tree. Iekš Raspberry pi (debian) nestrādā
+tree - parāda failu un direktoriju koku
+tree -d - parāda tikai tree. Iekš Raspberry pi (debian) nestrādā
 ```
 
 #### Pievienot PATH
