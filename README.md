@@ -79,7 +79,7 @@ x ->execute jeb izpildīt
 Atšķirības starp failu un direktoriju atļaujām
 |Atļauja|Fails|Direktorija|
 |-------|-----|-----------|
-|r|Atļauj lasīt failu|Atļauj kasīt failu nosaukumus direktorijā, bet ne papildus informāciju|
+|r|Atļauj lasīt failu|Atļauj lasīt failu nosaukumus direktorijā, bet ne papildus informāciju|
 |w|Atļauj mainīt failu|Atļauj mainīt ierakstus direktorijā|
 |x|Atļauj izpildīt failu|Atļauj pieeju mapes saturam un satura metadatiem|
 
