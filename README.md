@@ -210,7 +210,7 @@ Kur atņemot 7 no 6, rezultāts ir -1, kas tiek interpretēts kā 0 un attiecīg
 |man| - ar komandu aiz tā parāda komandas skaidrojumu|
 |pwd| - _present working directory_ - parāda patreizējo . direktoriju|
 |tree| - parāda failu un direktoriju koku|
-|tree -d| - parāda tikai tree. Iekš Raspberry pi (debian) nestrādā|
+|tree -d| - parāda tikai tree. Iekš Raspberry pi (debian)j;ainstalē atsevišķi -> ```sudo apt install tree -y``` |
 
 
 #### Pievienot PATH
