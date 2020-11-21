@@ -21,6 +21,7 @@ Datormācība (pamatkurss) elektroniskā klade
 |komanda|apraksts|
 |-------|--------|
 |cd ..| - atpakaļ|
+|cd ../kaukacfolderis|paiet soli atpakaļ un ieiet norādītajā direktorijā ja tā eksistē|
 |cd ~| (tilde) - pārvieto uz mājas direktoriju|
 |cd home/user| - pārvieto uz mājas diektorijas adresi|
 |cd /| - pārvieto uz root adresi|
