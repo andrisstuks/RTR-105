@@ -39,6 +39,7 @@ Datormācība (pamatkurss) elektroniskā klade
 |touch sample.txt| - rada failu ar nosaukumu sample un faila paplašinājumu .txt direktorijā, kurā atrodamies|
 |touch /home/user/rubbish/garbage.txt| - izveido garbage.txt failu direktorijā /home/user/rubbish/|
 ||-> direktorijas norādi varēja veikt arī ar ~/rubbish/garbage.txt, kur ~/ novada uz mājas direktoriju|
+|> .jup.txt| Rada failu jup.txt, ērtāk, jo ātrāk var radīt failu. ```.```faila nosaukuma priekšā rada slēpto failu|
 |echo ļoti svarīga informācija > saglaba.txt| - izveido failu saglaba.txt ar doto tekstu _ļoti svarīga informācija_|
 |cat random_fails.txt| - nolasa _random_fails.txt_ tesktu|
 |hexdump -C random_fails.txt| - izdrukā faila simbolus hex sistēmā|
