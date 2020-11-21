@@ -24,7 +24,7 @@ Datormācība (pamatkurss) elektroniskā klade
 |cd ~| (tilde) - pārvieto uz mājas direktoriju|
 |cd home/user| - pārvieto uz mājas diektorijas adresi|
 |cd /| - pārvieto uz root adresi|
-|cd -|  -pārvieto uz mājas direktoriju|
+|cd -|  -pārvieto starp pēdējām 2 direktorijām|
 
 
 #### Darbības ar failiem un direktorijām
