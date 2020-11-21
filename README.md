@@ -50,7 +50,7 @@ Datormācība (pamatkurss) elektroniskā klade
 ||-> tāpat var kopē failus uz krātuvi, piem cp saglaba.txt /media/sda1/ , kur fails tiks iekopēts norādītajā direktorijā|
 |mv |- pārcelt failu citā direktorijā, norādot jauno direktoriju|
 |mv saglaba.txt nevajag.txt| - aizstāj saglaba.txt ar tādu pašu failu ar nosaukumu nevajag.txt, burtiski - pārsauc (noskaidrot, vai maina reģistru)|
-|chomd| - maina tiesības failiem failam. Par to - atsevišķa sadaļa|
+|chmod| - maina tiesības failiem failam. Par to - atsevišķa sadaļa|
 
 -> vairāk par chmod - [Wikipedia](https://en.wikipedia.org/wiki/Chmod)
 
