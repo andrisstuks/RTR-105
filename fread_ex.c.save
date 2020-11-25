@@ -1,0 +1,37 @@
+/* fread example: read an entire file */
+#include <stdio.h>
+#include <stdlib.h>
+
+int main () {
+  FILE * pFile;
+  long lSize;
+  int * buffer
+//  char * buffer;
+  size_t result;
+
+  pFile = fopen ( "myfile.bin" , "rb" );//atveram lasīšanai bināro failu
+  if (pFile==NULL) {fputs ("File error",stderr); exit (1);}//ja fails nav atvērts, parādīsim ka ir kļūda
+
+  // obtain file size:
+  fseek (pFile , 0 , SEEK_END);//Noskaidrosim faila izmēru novietojot kursou faila sākumā un beigās
+  lSize = ftell (pFile);//Noskaidrojam kursora pozīciju - baita nummurs
+  rewind (pFile);//Pārvietojam kursoru atpakaļ uz faila sākumu, varētu pārvietot arī ar fseek, bert ātrāk ir ar rewind
+
+  // allocate memory to contain the whole file:
+//  buffer = (char*) malloc (sizeof(char)*lSize);//malloc - izveido atmiņas bloku datu masīvam
+  buffer = (int*) malloc (lSize);//malloc - izveido atmiņas bloku datu masīvam
+  if (buffer == NULL) {fputs ("Memory error",stderr); exit (2);}
+
+  // copy the file into the buffer:
+ // result = fread (buffer,1,lSize,pFile);
+  result = fread (buffer,sizeof(int),lSize/sizeof(int),pFile); 
+  if (result != lSize) {fputs ("Reading error",stderr
+); exit (3);}
+
+  /* the whole file is now loaded in the memory buffer. */
+
+  // terminate
+  fclose (pFile);
+  free (buffer);
+  return 0;
+}
