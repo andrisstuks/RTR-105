@@ -237,3 +237,5 @@ Kur atņemot 7 no 6, rezultāts ir -1, kas tiek interpretēts kā 0 un attiecīg
 |exit| - izeja no sistēmas|
 |sh| - izslēdz shell
 
+##### Izmainīt PATH
+```export PATH=`echo $PATH | tr ":" "\n" | grep -v "koizmest" | tr "\n" ":"` ```
